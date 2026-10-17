@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keep the main-source app name for metadata tools as well as the phone flavor.
+         Unused Leanback demo strings were removed; live UI strings belong to common/stmobile. -->
+    <string translatable="false" name="app_name"><![CDATA[DreamPipe]]></string>
+    <string translatable="false" name="browse_title"><![CDATA[SmartTube]]></string>
+</resources>

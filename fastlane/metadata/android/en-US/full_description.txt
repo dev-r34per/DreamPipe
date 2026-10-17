@@ -1,0 +1,3 @@
+DreamPipe is an independent Android YouTube client built on NewTube and SmartTube. It adds device-local playlists with search, sorting, merge, JSON and M3U import/export; compact video lists; configurable bottom navigation; and background audio.
+
+Fork of NewTube by aleixrodriala. Original licensed under MIT. Not affiliated with NewTube, SmartTube, PipePipe, Google or YouTube.

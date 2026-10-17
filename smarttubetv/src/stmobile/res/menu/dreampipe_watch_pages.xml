@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dreampipe_page_comments"
+        android:icon="@drawable/ic_watch_comment"
+        android:title="@string/mobile_comments_title" />
+    <item android:id="@+id/dreampipe_page_next"
+        android:icon="@drawable/ic_player_queue"
+        android:title="@string/dreampipe_next_videos" />
+    <item android:id="@+id/dreampipe_page_description"
+        android:icon="@drawable/ic_dreampipe_description"
+        android:title="@string/mobile_watch_description" />
+</menu>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- New DreamPipe surfaces currently use English fallback in other locales. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="dreampipe_preparing_playback" translatable="false">Preparing playback…</string>
+    <string name="dreampipe_stop_playback" translatable="false">Stop playback</string>
+    <string name="dreampipe_local_playlists">Playlists</string>
+    <string name="dreampipe_history">History</string>
+    <string name="dreampipe_youtube_history">YouTube history</string>
+    <string name="dreampipe_youtube_playlists">YouTube playlists</string>
+    <string name="dreampipe_more">More destinations</string>
+    <string name="dreampipe_navigation">Bottom navigation</string>
+    <string name="dreampipe_navigation_summary">Choose and reorder up to four destinations. Menu is always available.</string>
+    <string name="dreampipe_navigation_limit">Choose between one and four destinations.</string>
+    <string name="dreampipe_move_up">Move up</string>
+    <string name="dreampipe_move_down">Move down</string>
+    <string name="dreampipe_save">Save</string>
+    <string name="dreampipe_cancel">Cancel</string>
+    <string name="dreampipe_reset">Reset</string>
+    <string name="dreampipe_create">New playlist</string>
+    <string name="dreampipe_name">Playlist name</string>
+    <string name="dreampipe_name_required">Enter a playlist name.</string>
+    <string name="dreampipe_name_long">Use no more than 200 characters.</string>
+    <string name="dreampipe_search_playlists">Search playlists</string>
+    <string name="dreampipe_search_videos">Search videos</string>
+    <string name="dreampipe_sort">Sort</string>
+    <string name="dreampipe_sort_name">Name A–Z</string>
+    <string name="dreampipe_sort_newest">Newest first</string>
+    <string name="dreampipe_sort_updated">Recently changed</string>
+    <string name="dreampipe_sort_manual">Manual order</string>
+    <string name="dreampipe_sort_duration">Duration</string>
+    <string name="dreampipe_import">Import</string>
+    <string name="dreampipe_export">Export</string>
+    <string name="dreampipe_export_all">Export all playlists</string>
+    <string name="dreampipe_export_json">DreamPipe JSON (complete backup)</string>
+    <string name="dreampipe_export_m3u">M3U (portable video links)</string>
+    <string name="dreampipe_import_title">Import %1$d playlists?</string>
+    <string name="dreampipe_import_summary">%1$d videos. Add copies, or merge into playlists with a matching identity or name. Existing videos stay in order.</string>
+    <string name="dreampipe_import_copies">Add copies</string>
+    <string name="dreampipe_import_merge">Merge matching</string>
+    <string name="dreampipe_import_done">Imported %1$d playlists</string>
+    <string name="dreampipe_restore_backup">Restore backup</string>
+    <string name="dreampipe_restore_backup_body">Your current library could not be read. Restore these playlists? A separate copy of the unreadable file will be kept on this device.</string>
+    <string name="dreampipe_import_failed">Couldn’t import this file. Use a DreamPipe JSON archive or an M3U containing YouTube links, up to 8 MiB.</string>
+    <string name="dreampipe_export_done">Playlists exported</string>
+    <string name="dreampipe_export_failed">Couldn’t save the export. Choose another location and try again.</string>
+    <string name="dreampipe_merge">Merge playlists</string>
+    <string name="dreampipe_merge_into">Merge into %1$s</string>
+    <string name="dreampipe_merge_summary">Choose playlists to combine, then decide whether to remove the source playlists.</string>
+    <string name="dreampipe_merge_done">Playlists merged</string>
+    <string name="dreampipe_merge_none">Create another playlist to merge.</string>
+    <string name="dreampipe_rename">Rename</string>
+    <string name="dreampipe_delete">Delete playlist</string>
+    <string name="dreampipe_delete_title">Delete “%1$s”?</string>
+    <string name="dreampipe_delete_body">This removes the local playlist. Downloaded files and YouTube playlists are kept.</string>
+    <string name="dreampipe_deleted">Playlist deleted</string>
+    <string name="dreampipe_empty_playlists">Your playlists, on this device</string>
+    <string name="dreampipe_empty_playlists_body">Create a playlist, import a backup, or save a video from its menu. No account needed.</string>
+    <string name="dreampipe_empty_playlist">No videos yet</string>
+    <string name="dreampipe_empty_playlist_body">Use “Save to playlist” on a video to add it here.</string>
+    <string name="dreampipe_empty_history">Your watch history is empty</string>
+    <string name="dreampipe_empty_history_body">Videos you play appear here, even when you are signed out.</string>
+    <string name="dreampipe_no_matches">No matches</string>
+    <string name="dreampipe_loading">Loading your library…</string>
+    <string name="dreampipe_library_error">Couldn’t read your library. Your saved file has been kept. Restart the app or restore a backup.</string>
+    <string name="dreampipe_change_failed">Couldn’t save the change. Your playlists have been kept.</string>
+    <string name="dreampipe_add_local">Save to playlist</string>
+    <string name="dreampipe_add_done">Saved to %1$s</string>
+    <string name="dreampipe_remove_video">Remove from playlist</string>
+    <string name="dreampipe_play_all">Play all</string>
+    <string name="dreampipe_shuffle">Shuffle</string>
+    <string name="dreampipe_background">Play in background</string>
+    <string name="dreampipe_open_player">Open player</string>
+    <string name="dreampipe_clear_history">Clear local history</string>
+    <string name="dreampipe_clear_history_body">Remove the watch history saved on this device?</string>
+    <string name="dreampipe_remove_history">Remove from history</string>
+    <string name="dreampipe_record_history">Save local watch history</string>
+    <string name="dreampipe_record_history_summary">Keep watched videos on this device, independently of your YouTube account</string>
+    <string name="dreampipe_row_limit">Rows per page</string>
+    <string name="dreampipe_row_limit_summary">Show more reveals the next rows without losing videos</string>
+    <string name="dreampipe_unlimited">Unlimited</string>
+    <string name="dreampipe_show_more">Show more</string>
+    <string name="dreampipe_more_actions">More actions</string>
+    <string name="dreampipe_actions_for">Actions for %1$s</string>
+    <string name="dreampipe_update_disabled">Updates are installed manually for this DreamPipe build.</string>
+    <string name="dreampipe_upstream_source">Upstream source: NewTube</string>
+    <string name="dreampipe_attribution">Fork of NewTube by aleixrodriala. Original licensed under MIT.</string>
+    <string name="dreampipe_share_text">DreamPipe — a YouTube client with local playlists and background audio.</string>
+    <plurals name="dreampipe_video_count">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d videos</item>
+    </plurals>
+    <string name="dreampipe_save_to_playlist">Save to playlist</string>
+    <string name="dreampipe_done">Done</string>
+    <string name="dreampipe_saving">Saving…</string>
+    <string name="dreampipe_account_playlists_retry">Couldn’t load YouTube playlists. Tap to try again. Local playlists are still available.</string>
+    <string name="dreampipe_account_playlists_loading">Loading YouTube playlists…</string>
+    <string name="dreampipe_picker_hint">Tap a playlist to add or remove this video. Changes save immediately.</string>
+    <string name="dreampipe_on_device">On device</string>
+    <string name="dreampipe_youtube">YouTube</string>
+    <string name="dreampipe_reorder_item">Reorder %1$s</string>
+    <string name="dreampipe_created">Created %1$s</string>
+    <string name="dreampipe_add_playlist_to">Add videos to another playlist</string>
+    <string name="dreampipe_remove_watched">Remove watched videos</string>
+    <string name="dreampipe_no_watched">No completed videos in this playlist</string>
+    <string name="dreampipe_remove_watched_confirm">Remove %1$d videos watched to at least 90%%? This changes only this local playlist.</string>
+    <string name="dreampipe_no_other_playlist">Create another local playlist first.</string>
+    <string name="dreampipe_remove_video_confirm">Remove “%1$s” from this playlist? Downloaded files are kept.</string>
+    <string name="dreampipe_remove_history_confirm">Remove “%1$s” from local history?</string>
+    <string name="dreampipe_set_thumbnail">Set as playlist thumbnail</string>
+    <string name="dreampipe_move_to_playlist">Move to another playlist</string>
+    <string name="dreampipe_description_loading">Loading description…</string>
+    <string name="dreampipe_description_empty">No description available.</string>
+    <string name="dreampipe_next_videos">Next videos</string>
+    <string name="dreampipe_delete_item">Delete</string>
+    <string name="dreampipe_comments_loading">Loading comments…</string>
+    <string name="dreampipe_playlist_update_failed">Couldn’t update this playlist. Try again.</string>
+    <string name="dreampipe_menu" translatable="false">Menu</string>
+    <string name="dreampipe_select" translatable="false">Select</string>
+    <string name="dreampipe_select_shown" translatable="false">Select shown</string>
+    <string name="dreampipe_selected_count" translatable="false">%1$d selected</string>
+    <string name="dreampipe_manage_playlist" translatable="false">Playlist actions</string>
+    <string name="dreampipe_merge_delete_sources" translatable="false">Remove source playlists after merging</string>
+    <string name="dreampipe_merge_target" translatable="false">Choose the playlist to keep</string>
+    <string name="dreampipe_merge_help" translatable="false">The destination keeps its name, order and cover. Duplicate videos appear once.</string>
+    <string name="dreampipe_download_selection" translatable="false">Download selected videos</string>
+    <string name="dreampipe_download_batch_body" translatable="false">Choose a quality for %1$d videos. Available lower qualities are used when needed. Existing downloads are skipped.</string>
+    <string name="dreampipe_download_batch_progress" translatable="false">Preparing %1$d of %2$d…\nQueued: %3$d · Skipped: %4$d · Unavailable: %5$d</string>
+    <string name="dreampipe_download_batch_done" translatable="false">Queued: %1$d · Skipped: %2$d · Unavailable: %3$d</string>
+    <string name="dreampipe_download_stop" translatable="false">Stop adding</string>
+    <string name="dreampipe_selected_videos" translatable="false">Selected videos</string>
+    <string name="dreampipe_move_selected" translatable="false">Move selected videos</string>
+    <string name="dreampipe_download_batch_stopped" translatable="false">Stopped adding videos. Downloads already queued will continue.</string>
+    <string name="dreampipe_continue" translatable="false">Continue</string>
+    <string name="dreampipe_remove_video_body" translatable="false">Only playlist entries are removed. Downloaded files are kept.</string>
+    <string name="dreampipe_no_videos_download" translatable="false">The selection has no videos to download.</string>
+    <string name="dreampipe_download_video" translatable="false">Video up to %1$dp</string>
+    <string name="dreampipe_more_selected" translatable="false">+ %1$d more</string>
+    <plurals name="dreampipe_delete_selected_playlists">
+        <item quantity="one">Delete this playlist?</item>
+        <item quantity="other">Delete %1$d selected playlists?</item>
+    </plurals>
+    <plurals name="dreampipe_delete_selected_videos">
+        <item quantity="one">Remove this video from the playlist?</item>
+        <item quantity="other">Remove %1$d selected videos from this playlist?</item>
+    </plurals>
+    <string name="dreampipe_move_action" translatable="false">Move</string>
+    <string name="dreampipe_delete_selected_body" translatable="false">Only selected playlists and their saved entries are removed. Downloaded files and YouTube playlists are kept.</string>
+</resources>

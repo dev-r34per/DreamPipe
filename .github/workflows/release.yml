@@ -1,0 +1,112 @@
+name: DreamPipe signed release
+
+# Explicit invocation only. Public publishing remains a separate, reviewable action.
+on:
+  workflow_dispatch:
+    inputs:
+      create_draft:
+        description: Create a draft GitHub release (run this workflow on a v* tag)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment: release
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    env:
+      EXPECTED_CERT: ${{ vars.RELEASE_CERT_SHA256 }}
+      CREATE_DRAFT: ${{ inputs.create_draft }}
+      REF_TYPE: ${{ github.ref_type }}
+      TAG: ${{ github.ref_name }}
+    steps:
+      - name: Check out source and pinned engine modules
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          submodules: true
+          persist-credentials: false
+      - name: Set up JDK 21
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install Android SDK components
+        run: |
+          (yes || true) | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-37' 'build-tools;37.0.0' 'ndk;21.0.6113669' > /dev/null
+      - name: Validate release settings
+        run: |
+          test -n "$EXPECTED_CERT" || { echo 'Set RELEASE_CERT_SHA256 to your own signing certificate fingerprint.'; exit 1; }
+          if [ "$CREATE_DRAFT" = true ]; then
+            test "$REF_TYPE" = tag && [[ "$TAG" == v* ]] || { echo 'Draft releases require a v* tag.'; exit 1; }
+            version="$(sed -n 's/^[[:space:]]*versionName "\([^"]*\)".*/\1/p' smarttubetv/build.gradle | tail -n 1)"
+            test "$TAG" = "v$version" || { echo 'Tag and Android versionName must match.'; exit 1; }
+          fi
+      - name: Configure the fork signing key
+        env:
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          python3 - <<'PYTHON'
+          import base64, os, pathlib
+          names = ['RELEASE_KEYSTORE_BASE64', 'RELEASE_KEYSTORE_PASSWORD', 'RELEASE_KEY_ALIAS', 'RELEASE_KEY_PASSWORD']
+          if not all(os.environ.get(name) for name in names):
+              raise SystemExit('Configure the four RELEASE_KEY* secrets for your own fork.')
+          key = pathlib.Path('release-signing.jks').resolve()
+          key.write_bytes(base64.b64decode(''.join(os.environ[names[0]].split()), validate=True))
+          key.chmod(0o600)
+          def escaped(value):
+              data = value.encode('utf-16-be')
+              return ''.join('\\u%04x' % int.from_bytes(data[i:i+2], 'big') for i in range(0, len(data), 2))
+          values = {'storeFile': str(key), 'storePassword': os.environ[names[1]],
+                    'keyAlias': os.environ[names[2]], 'keyPassword': os.environ[names[3]]}
+          props = pathlib.Path('keystore.properties')
+          props.write_text(''.join(k + '=' + escaped(v) + '\n' for k, v in values.items()), encoding='ascii')
+          props.chmod(0o600)
+          PYTHON
+      - name: Test, lint and build signed APKs
+        run: |
+          export SOURCE_DATE_EPOCH="$(git log -1 --format=%ct)"
+          ./gradlew --no-daemon :common:testDebugUnitTest :smarttubetv:testStmobileDebugUnitTest :smarttubetv:lintStmobileRelease :smarttubetv:assembleStmobileRelease
+      - name: Verify certificate and collect artifacts
+        run: |
+          mkdir -p dist
+          cp smarttubetv/build/outputs/renamed_apks/stmobileRelease/DreamPipe_*.apk dist/
+          expected="$(printf '%s' "$EXPECTED_CERT" | tr -d ':' | tr '[:upper:]' '[:lower:]')"
+          signer="$ANDROID_HOME/build-tools/37.0.0/apksigner"
+          for apk in dist/*.apk; do
+            actual="$("$signer" verify --print-certs "$apk" | sed -n 's/^Signer #1 certificate SHA-256 digest: //p' | tr '[:upper:]' '[:lower:]')"
+            test "$actual" = "$expected" || { echo 'Signing certificate does not match this fork.'; exit 1; }
+          done
+          cp LICENSE THIRD_PARTY_NOTICES.md dist/
+          (cd dist && sha256sum DreamPipe_*.apk > SHA256SUMS)
+      - name: Attest signed APK provenance
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8
+        with:
+          subject-path: dist/*.apk
+      - name: Save signed artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: DreamPipe-signed
+          path: dist/*
+          if-no-files-found: error
+      - name: Create draft release for review
+        if: inputs.create_draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$TAG" dist/* --draft --verify-tag --title "DreamPipe ${TAG#v}" --notes-file CHANGELOG.md
+      - name: Remove local signing material
+        if: always()
+        run: rm -f -- release-signing.jks keystore.properties

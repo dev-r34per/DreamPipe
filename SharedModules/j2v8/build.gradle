@@ -1,0 +1,43 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.library'
+
+android {
+    namespace = 'com.eclipsesource.v8'
+
+    compileSdk = project.ext.compileSdkVersion
+    testOptions.unitTests.includeAndroidResources = true
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        minSdk = project.ext.minSdkVersion
+        targetSdk = project.ext.targetSdkVersion
+        versionCode 11
+        versionName "6.2.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //ndkVersion "21.0.6113669"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:' + junitVersion
+    testImplementation 'org.mockito:mockito-core:' + mockitoVersion
+
+    androidTestImplementation 'junit:junit:' + junitVersion
+    androidTestImplementation 'org.mockito:mockito-android:' + mockitoVersion // https://jeroenmols.com/blog/2017/01/17/mockitoandroid/
+    androidTestImplementation 'androidx.annotation:annotation:' + annotationXVersion
+    androidTestImplementation 'androidx.test:runner:' + testXSupportVersion
+    androidTestImplementation 'androidx.test:rules:' + testXSupportVersion
+}

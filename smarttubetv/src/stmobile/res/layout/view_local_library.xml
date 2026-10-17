@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/mobile_color_background">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/local_playlist_coordinator"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/local_playlist_appbar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/mobile_color_background" android:stateListAnimator="@null" app:elevation="0dp">
+    <LinearLayout android:id="@+id/local_playlist_header" app:layout_scrollFlags="scroll|enterAlways" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:visibility="gone">
+        <TextView android:id="@+id/local_playlist_name" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="22sp" android:fontFamily="sans-serif-medium"
+            android:maxLines="3" android:ellipsize="end" android:textColor="@color/mobile_color_on_surface" />
+        <TextView android:id="@+id/local_playlist_count" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textSize="13sp"
+            android:textColor="@color/mobile_color_on_surface_secondary" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="10dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_background"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                android:minHeight="48dp" android:text="@string/dreampipe_background" android:textSize="12sp"
+                app:icon="@drawable/ic_player_background" app:iconPadding="4dp" app:iconSize="18dp"
+                android:paddingHorizontal="8dp" style="@style/Widget.NewTube.Button.Pill" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_play_all"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:layout_marginStart="8dp" android:text="@string/dreampipe_play_all" android:textSize="12sp"
+                app:icon="@drawable/ic_player_play" app:iconPadding="4dp" app:iconSize="18dp"
+                android:paddingHorizontal="8dp" style="@style/Widget.NewTube.Button.Pill" />
+            <ImageButton android:id="@+id/local_shuffle" android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_marginStart="4dp" android:padding="12dp" android:src="@drawable/ic_player_shuffle"
+                app:tint="@color/mobile_color_on_surface"
+                android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/dreampipe_shuffle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:gravity="center_vertical" android:paddingHorizontal="8dp" android:orientation="horizontal">
+        <EditText android:id="@+id/local_search" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="44dp" android:background="@drawable/mobile_search_field_background"
+            android:hint="@string/dreampipe_search_playlists" android:inputType="text"
+            android:imeOptions="actionSearch" android:maxLines="1" android:singleLine="true"
+            android:paddingHorizontal="12dp" android:textSize="14sp" android:textColor="@color/mobile_color_on_surface"
+            android:textColorHint="@color/mobile_color_on_surface_secondary" />
+        <ImageButton android:id="@+id/local_sort" android:layout_width="48dp" android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_dreampipe_sort"
+            android:padding="12dp" android:contentDescription="@string/dreampipe_sort" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/local_tools" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="12dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/local_actions"
+            style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+            android:text="@string/dreampipe_select" app:icon="@drawable/ic_dreampipe_select" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/local_import"
+            style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+            android:text="@string/dreampipe_import" app:icon="@drawable/ic_dreampipe_import" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/local_manage"
+            style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+            android:text="@string/dreampipe_manage_playlist" android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/local_selection" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingHorizontal="8dp" android:background="@color/dreampipe_selection_container" android:visibility="gone">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:gravity="center_vertical">
+            <TextView android:id="@+id/local_selection_count" android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:paddingStart="8dp" android:textSize="16sp"
+                android:accessibilityLiveRegion="polite" android:textColor="@color/mobile_color_on_surface" />
+            <CheckBox android:id="@+id/local_select_shown" android:layout_width="wrap_content" android:layout_height="48dp"
+                android:text="@string/dreampipe_select_shown" android:textSize="12sp" android:textColor="@color/mobile_color_on_surface" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_selection_done"
+                style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="48dp"
+                android:minWidth="48dp" android:paddingHorizontal="8dp" android:text="@string/dreampipe_done" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:gravity="center_vertical">
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_bulk_merge"
+                style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:minWidth="0dp" android:paddingHorizontal="2dp" android:textSize="12sp" android:text="@string/dreampipe_merge" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_bulk_download"
+                style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:minWidth="0dp" android:paddingHorizontal="2dp" android:textSize="12sp" android:text="@string/dialog_download" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_bulk_export"
+                style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:minWidth="0dp" android:paddingHorizontal="2dp" android:textSize="12sp" android:text="@string/dreampipe_export" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/local_bulk_delete"
+                style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:minWidth="0dp" android:paddingHorizontal="2dp" android:textSize="12sp" android:text="@string/dreampipe_delete" />
+        </LinearLayout>
+    </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/local_playlist_body" android:layout_width="match_parent" android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/local_list"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clipToPadding="false" android:paddingBottom="76dp" android:scrollbars="vertical" />
+        <LinearLayout android:id="@+id/local_empty" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="28dp">
+            <ImageView android:layout_width="56dp" android:layout_height="56dp" android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_dreampipe_playlists" android:contentDescription="@null" />
+            <TextView android:id="@+id/local_empty_title" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center" android:textSize="18sp"
+                android:textColor="@color/mobile_color_on_surface" />
+            <TextView android:id="@+id/local_empty_body" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="8dp"
+                android:textSize="14sp" android:textColor="@color/mobile_color_on_surface_secondary" />
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/local_create"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end"
+            android:layout_margin="20dp" android:contentDescription="@string/dreampipe_create"
+            app:srcCompat="@drawable/ic_mobile_add" app:backgroundTint="@color/mobile_color_primary" app:tint="@color/mobile_color_on_primary" />
+    </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/local_show_more"
+        android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginHorizontal="16dp"
+        android:visibility="gone" android:text="@string/dreampipe_show_more" style="@style/Widget.NewTube.Button.Pill" />
+</LinearLayout>

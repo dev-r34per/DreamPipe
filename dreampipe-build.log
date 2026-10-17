@@ -1,0 +1,655 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :appupdatechecker2:preBuild UP-TO-DATE
+> Task :appupdatechecker2:preDebugBuild UP-TO-DATE
+> Task :appupdatechecker2:generateDebugResources UP-TO-DATE
+> Task :appupdatechecker2:packageDebugResources UP-TO-DATE
+> Task :appupdatechecker2:processDebugNavigationResources UP-TO-DATE
+> Task :appupdatechecker2:parseDebugLocalResources UP-TO-DATE
+> Task :sharedutils:preBuild UP-TO-DATE
+> Task :sharedutils:preDebugBuild UP-TO-DATE
+> Task :sharedutils:generateDebugResources UP-TO-DATE
+> Task :sharedutils:packageDebugResources UP-TO-DATE
+> Task :sharedutils:processDebugNavigationResources UP-TO-DATE
+> Task :sharedutils:parseDebugLocalResources UP-TO-DATE
+> Task :sharedutils:generateDebugRFile UP-TO-DATE
+> Task :appupdatechecker2:generateDebugRFile UP-TO-DATE
+> Task :sharedutils:generateDebugBuildConfig UP-TO-DATE
+> Task :sharedutils:compileDebugKotlin UP-TO-DATE
+> Task :sharedutils:javaPreCompileDebug UP-TO-DATE
+> Task :sharedutils:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sharedutils:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :appupdatechecker2:compileDebugKotlin NO-SOURCE
+> Task :appupdatechecker2:javaPreCompileDebug UP-TO-DATE
+> Task :appupdatechecker2:compileDebugJavaWithJavac UP-TO-DATE
+> Task :appupdatechecker2:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :appupdatechecker2:processDebugJavaRes NO-SOURCE
+> Task :appupdatechecker2:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :common:preBuild UP-TO-DATE
+> Task :common:preDebugBuild UP-TO-DATE
+> Task :common:generateDebugBuildConfig UP-TO-DATE
+> Task :common:generateDebugResources UP-TO-DATE
+> Task :common:packageDebugResources UP-TO-DATE
+> Task :common:processDebugNavigationResources UP-TO-DATE
+> Task :common:parseDebugLocalResources UP-TO-DATE
+> Task :filepicker-lib:preBuild UP-TO-DATE
+> Task :filepicker-lib:preDebugBuild UP-TO-DATE
+> Task :filepicker-lib:generateDebugResources UP-TO-DATE
+> Task :filepicker-lib:packageDebugResources UP-TO-DATE
+> Task :filepicker-lib:processDebugNavigationResources UP-TO-DATE
+> Task :filepicker-lib:parseDebugLocalResources UP-TO-DATE
+> Task :filepicker-lib:generateDebugRFile UP-TO-DATE
+> Task :mediaserviceinterfaces:preBuild UP-TO-DATE
+> Task :mediaserviceinterfaces:preDebugBuild UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugResources UP-TO-DATE
+> Task :mediaserviceinterfaces:packageDebugResources UP-TO-DATE
+> Task :mediaserviceinterfaces:processDebugNavigationResources UP-TO-DATE
+> Task :mediaserviceinterfaces:parseDebugLocalResources UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugRFile UP-TO-DATE
+> Task :slidableactivity:preBuild UP-TO-DATE
+> Task :slidableactivity:preDebugBuild UP-TO-DATE
+> Task :slidableactivity:generateDebugResources UP-TO-DATE
+> Task :slidableactivity:packageDebugResources UP-TO-DATE
+> Task :slidableactivity:processDebugNavigationResources UP-TO-DATE
+> Task :slidableactivity:parseDebugLocalResources UP-TO-DATE
+> Task :slidableactivity:generateDebugRFile UP-TO-DATE
+> Task :j2v8:preBuild UP-TO-DATE
+> Task :j2v8:preDebugBuild UP-TO-DATE
+> Task :j2v8:generateDebugResources UP-TO-DATE
+> Task :j2v8:packageDebugResources UP-TO-DATE
+> Task :j2v8:processDebugNavigationResources UP-TO-DATE
+> Task :j2v8:parseDebugLocalResources UP-TO-DATE
+> Task :j2v8:generateDebugRFile UP-TO-DATE
+> Task :youtubeapi:preBuild UP-TO-DATE
+> Task :youtubeapi:preDebugBuild UP-TO-DATE
+> Task :youtubeapi:generateDebugResources UP-TO-DATE
+> Task :youtubeapi:packageDebugResources UP-TO-DATE
+> Task :youtubeapi:processDebugNavigationResources UP-TO-DATE
+> Task :youtubeapi:parseDebugLocalResources UP-TO-DATE
+> Task :youtubeapi:generateDebugRFile UP-TO-DATE
+> Task :common:generateDebugRFile UP-TO-DATE
+> Task :filepicker-lib:compileDebugKotlin NO-SOURCE
+> Task :filepicker-lib:javaPreCompileDebug UP-TO-DATE
+> Task :filepicker-lib:compileDebugJavaWithJavac UP-TO-DATE
+> Task :filepicker-lib:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:compileDebugKotlin NO-SOURCE
+> Task :mediaserviceinterfaces:javaPreCompileDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:compileDebugJavaWithJavac UP-TO-DATE
+> Task :mediaserviceinterfaces:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :slidableactivity:compileDebugKotlin NO-SOURCE
+> Task :slidableactivity:javaPreCompileDebug UP-TO-DATE
+> Task :slidableactivity:compileDebugJavaWithJavac UP-TO-DATE
+> Task :slidableactivity:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :j2v8:compileDebugKotlin NO-SOURCE
+> Task :j2v8:javaPreCompileDebug UP-TO-DATE
+> Task :j2v8:compileDebugJavaWithJavac UP-TO-DATE
+> Task :j2v8:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :youtubeapi:compileDebugKotlin UP-TO-DATE
+> Task :youtubeapi:javaPreCompileDebug UP-TO-DATE
+> Task :youtubeapi:compileDebugJavaWithJavac UP-TO-DATE
+> Task :youtubeapi:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :common:compileDebugKotlin UP-TO-DATE
+> Task :common:javaPreCompileDebug UP-TO-DATE
+> Task :common:compileDebugJavaWithJavac UP-TO-DATE
+> Task :common:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :common:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :common:preDebugUnitTestBuild UP-TO-DATE
+> Task :appupdatechecker2:mapDebugSourceSetPaths UP-TO-DATE
+> Task :appupdatechecker2:compileDebugLibraryResources UP-TO-DATE
+> Task :appupdatechecker2:writeDebugAarMetadata UP-TO-DATE
+> Task :common:writeDebugAarMetadata UP-TO-DATE
+> Task :filepicker-lib:writeDebugAarMetadata UP-TO-DATE
+> Task :j2v8:writeDebugAarMetadata UP-TO-DATE
+> Task :mediaserviceinterfaces:writeDebugAarMetadata UP-TO-DATE
+> Task :sharedutils:writeDebugAarMetadata UP-TO-DATE
+> Task :slidableactivity:writeDebugAarMetadata UP-TO-DATE
+> Task :youtubeapi:writeDebugAarMetadata UP-TO-DATE
+> Task :common:checkDebugUnitTestAarMetadata UP-TO-DATE
+> Task :common:mapDebugSourceSetPaths UP-TO-DATE
+> Task :common:compileDebugLibraryResources UP-TO-DATE
+> Task :common:mapDebugUnitTestSourceSetPaths UP-TO-DATE
+> Task :common:generateDebugUnitTestResources UP-TO-DATE
+> Task :common:mergeDebugUnitTestResources UP-TO-DATE
+> Task :appupdatechecker2:extractDeepLinksDebug UP-TO-DATE
+> Task :appupdatechecker2:processDebugManifest UP-TO-DATE
+> Task :common:extractDeepLinksDebug UP-TO-DATE
+> Task :common:processDebugManifest UP-TO-DATE
+> Task :filepicker-lib:extractDeepLinksDebug UP-TO-DATE
+> Task :filepicker-lib:processDebugManifest UP-TO-DATE
+> Task :j2v8:extractDeepLinksDebug UP-TO-DATE
+> Task :j2v8:processDebugManifest UP-TO-DATE
+> Task :mediaserviceinterfaces:extractDeepLinksDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:processDebugManifest UP-TO-DATE
+> Task :sharedutils:extractDeepLinksDebug UP-TO-DATE
+> Task :sharedutils:processDebugManifest UP-TO-DATE
+> Task :slidableactivity:extractDeepLinksDebug UP-TO-DATE
+> Task :slidableactivity:processDebugManifest UP-TO-DATE
+> Task :youtubeapi:extractDeepLinksDebug UP-TO-DATE
+> Task :youtubeapi:processDebugManifest UP-TO-DATE
+> Task :common:processDebugUnitTestManifest UP-TO-DATE
+> Task :filepicker-lib:mapDebugSourceSetPaths UP-TO-DATE
+> Task :filepicker-lib:compileDebugLibraryResources UP-TO-DATE
+> Task :j2v8:mapDebugSourceSetPaths UP-TO-DATE
+> Task :j2v8:compileDebugLibraryResources UP-TO-DATE
+> Task :mediaserviceinterfaces:mapDebugSourceSetPaths UP-TO-DATE
+> Task :mediaserviceinterfaces:compileDebugLibraryResources UP-TO-DATE
+> Task :sharedutils:mapDebugSourceSetPaths UP-TO-DATE
+> Task :sharedutils:compileDebugLibraryResources UP-TO-DATE
+> Task :slidableactivity:mapDebugSourceSetPaths UP-TO-DATE
+> Task :slidableactivity:compileDebugLibraryResources UP-TO-DATE
+> Task :youtubeapi:mapDebugSourceSetPaths UP-TO-DATE
+> Task :youtubeapi:compileDebugLibraryResources UP-TO-DATE
+> Task :common:processDebugUnitTestResources UP-TO-DATE
+> Task :common:compileDebugUnitTestKotlin NO-SOURCE
+> Task :common:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :common:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+> Task :appupdatechecker2:generateDebugAssets UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugAssets UP-TO-DATE
+> Task :common:generateDebugUnitTestAssets UP-TO-DATE
+> Task :common:generateDebugAssets UP-TO-DATE
+> Task :common:mergeDebugAssets UP-TO-DATE
+> Task :filepicker-lib:generateDebugAssets UP-TO-DATE
+> Task :filepicker-lib:mergeDebugAssets UP-TO-DATE
+> Task :j2v8:generateDebugAssets UP-TO-DATE
+> Task :j2v8:mergeDebugAssets UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugAssets UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugAssets UP-TO-DATE
+> Task :sharedutils:generateDebugAssets UP-TO-DATE
+> Task :sharedutils:mergeDebugAssets UP-TO-DATE
+> Task :slidableactivity:generateDebugAssets UP-TO-DATE
+> Task :slidableactivity:mergeDebugAssets UP-TO-DATE
+> Task :youtubeapi:generateDebugAssets UP-TO-DATE
+> Task :youtubeapi:mergeDebugAssets UP-TO-DATE
+> Task :common:mergeDebugUnitTestAssets UP-TO-DATE
+> Task :common:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :common:generateDebugUnitTestConfig UP-TO-DATE
+> Task :common:processDebugJavaRes UP-TO-DATE
+> Task :common:processDebugUnitTestJavaRes NO-SOURCE
+> Task :filepicker-lib:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :filepicker-lib:processDebugJavaRes NO-SOURCE
+> Task :j2v8:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :j2v8:processDebugJavaRes UP-TO-DATE
+> Task :mediaserviceinterfaces:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:processDebugJavaRes NO-SOURCE
+> Task :sharedutils:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :sharedutils:processDebugJavaRes UP-TO-DATE
+> Task :slidableactivity:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :slidableactivity:processDebugJavaRes NO-SOURCE
+> Task :youtubeapi:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :youtubeapi:processDebugJavaRes UP-TO-DATE
+> Task :common:testDebugUnitTest UP-TO-DATE
+> Task :doubletapplayerview-media3:preBuild UP-TO-DATE
+> Task :doubletapplayerview-media3:preDebugBuild UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugResources UP-TO-DATE
+> Task :doubletapplayerview-media3:packageDebugResources UP-TO-DATE
+> Task :doubletapplayerview-media3:processDebugNavigationResources UP-TO-DATE
+> Task :doubletapplayerview-media3:parseDebugLocalResources UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugRFile UP-TO-DATE
+> Task :doubletapplayerview-media3:compileDebugKotlin UP-TO-DATE
+> Task :doubletapplayerview-media3:javaPreCompileDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:compileDebugJavaWithJavac UP-TO-DATE
+> Task :doubletapplayerview-media3:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:processDebugJavaRes UP-TO-DATE
+> Task :sabr-media3:preBuild UP-TO-DATE
+> Task :sabr-media3:preDebugBuild UP-TO-DATE
+> Task :sabr-media3:generateDebugResources UP-TO-DATE
+> Task :sabr-media3:packageDebugResources UP-TO-DATE
+> Task :sabr-media3:processDebugNavigationResources UP-TO-DATE
+> Task :sabr-media3:parseDebugLocalResources UP-TO-DATE
+> Task :sabr-media3:generateDebugRFile UP-TO-DATE
+> Task :sabr-media3:generateSabrProto UP-TO-DATE
+> Task :sabr-media3:compileDebugKotlin NO-SOURCE
+> Task :sabr-media3:javaPreCompileDebug UP-TO-DATE
+> Task :sabr-media3:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sabr-media3:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :sabr-media3:processDebugJavaRes NO-SOURCE
+> Task :doubletapplayerview-media3:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :sabr-media3:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :smarttubetv:preBuild UP-TO-DATE
+> Task :smarttubetv:preStmobileDebugBuild UP-TO-DATE
+> Task :smarttubetv:generateStmobileDebugBuildConfig
+> Task :smarttubetv:generateStmobileDebugResources
+> Task :smarttubetv:packageStmobileDebugResources
+> Task :smarttubetv:processStmobileDebugNavigationResources
+> Task :smarttubetv:javaPreCompileStmobileDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:mapDebugSourceSetPaths UP-TO-DATE
+> Task :doubletapplayerview-media3:compileDebugLibraryResources UP-TO-DATE
+> Task :sabr-media3:mapDebugSourceSetPaths UP-TO-DATE
+> Task :sabr-media3:compileDebugLibraryResources UP-TO-DATE
+> Task :doubletapplayerview-media3:writeDebugAarMetadata UP-TO-DATE
+> Task :sabr-media3:writeDebugAarMetadata UP-TO-DATE
+> Task :smarttubetv:checkStmobileDebugAarMetadata UP-TO-DATE
+> Task :smarttubetv:mapStmobileDebugSourceSetPaths
+> Task :smarttubetv:compileStmobileDebugNavigationResources UP-TO-DATE
+> Task :smarttubetv:parseStmobileDebugLocalResources
+> Task :smarttubetv:createStmobileDebugCompatibleScreenManifests
+> Task :doubletapplayerview-media3:extractDeepLinksDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:processDebugManifest UP-TO-DATE
+> Task :sabr-media3:extractDeepLinksDebug UP-TO-DATE
+> Task :sabr-media3:processDebugManifest UP-TO-DATE
+> Task :smarttubetv:extractDeepLinksStmobileDebug UP-TO-DATE
+> Task :smarttubetv:generateStmobileDebugRFile
+> Task :smarttubetv:processStmobileDebugMainManifest
+> Task :smarttubetv:compileStmobileDebugKotlin NO-SOURCE
+
+> Task :smarttubetv:mergeStmobileDebugResources
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/common/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml: Multiple substitutions specified in non-positional format of string resource string/auto_frame_rate_applying. Did you mean to add the formatted="false" attribute?
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/common/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml: Multiple substitutions specified in non-positional format of string resource string/proxy_test_error. Did you mean to add the formatted="false" attribute?
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/common/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml: Multiple substitutions specified in non-positional format of string resource string/proxy_test_start. Did you mean to add the formatted="false" attribute?
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/common/build/intermediates/packaged_res/debug/packageDebugResources/values/values.xml: Multiple substitutions specified in non-positional format of string resource string/proxy_test_status. Did you mean to add the formatted="false" attribute?
+
+> Task :smarttubetv:compileStmobileDebugJavaWithJavac
+Note: [1] Wrote GeneratedAppGlideModule with: [com.bumptech.glide.integration.webp.WebpGlideLibraryModule]
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :smarttubetv:processStmobileDebugManifest
+
+> Task :smarttubetv:generateSabrProofProto
+sabr/videostreaming/streamer_context.proto:5:1: warning: Import sabr/videostreaming/playback_cookie.proto is unused.
+
+> Task :smarttubetv:preStmobileDebugUnitTestBuild UP-TO-DATE
+> Task :smarttubetv:javaPreCompileStmobileDebugUnitTest UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugAssets UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugAssets UP-TO-DATE
+> Task :sabr-media3:generateDebugAssets UP-TO-DATE
+> Task :sabr-media3:generateSabrLegalAssets UP-TO-DATE
+> Task :sabr-media3:mergeDebugAssets UP-TO-DATE
+> Task :smarttubetv:generateStmobileDebugAssets UP-TO-DATE
+> Task :smarttubetv:mergeStmobileDebugAssets UP-TO-DATE
+
+> Task :smarttubetv:processStmobileDebugUnitTestManifest
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:11:5-14:44 Warning:
+	uses-feature#android.software.leanback@android:required was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:11 to replace other declarations but no other declaration present
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:15:5-18:44 Warning:
+	uses-feature#android.hardware.touchscreen@android:required was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:15 to replace other declarations but no other declaration present
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:87:5-386:19 Warning:
+	application@android:name was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:87 to replace other declarations but no other declaration present
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:87:5-386:19 Warning:
+	application@android:theme was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:87 to replace other declarations but no other declaration present
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:117:9-131:20 Warning:
+	activity#com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity@android:launchMode was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:117 to replace other declarations but no other declaration present
+/home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/intermediates/tmp/manifest/test/stmobile/debug/tempFile2ProcessTestManifest15418724164445493853.xml:117:9-131:20 Warning:
+	activity#com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity@android:configChanges was tagged at tempFile2ProcessTestManifest15418724164445493853.xml:117 to replace other declarations but no other declaration present
+
+> Task :smarttubetv:processStmobileDebugJavaRes UP-TO-DATE
+> Task :smarttubetv:processStmobileDebugManifestForPackage
+> Task :appupdatechecker2:checkDebugAarMetadata UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugJniLibFolders UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugNativeLibs NO-SOURCE
+> Task :appupdatechecker2:stripDebugDebugSymbols NO-SOURCE
+> Task :appupdatechecker2:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :appupdatechecker2:extractDebugAnnotations UP-TO-DATE
+> Task :appupdatechecker2:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :appupdatechecker2:prepareDebugArtProfile UP-TO-DATE
+> Task :appupdatechecker2:prepareLintJarForPublish UP-TO-DATE
+> Task :appupdatechecker2:mergeDebugJavaResource UP-TO-DATE
+> Task :appupdatechecker2:syncDebugLibJars UP-TO-DATE
+> Task :appupdatechecker2:bundleDebugLocalLintAar UP-TO-DATE
+> Task :sharedutils:checkDebugAarMetadata UP-TO-DATE
+> Task :sharedutils:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sharedutils:mergeDebugNativeLibs NO-SOURCE
+> Task :sharedutils:stripDebugDebugSymbols NO-SOURCE
+> Task :sharedutils:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :sharedutils:extractDebugAnnotations UP-TO-DATE
+> Task :sharedutils:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :sharedutils:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :sharedutils:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :sharedutils:prepareDebugArtProfile UP-TO-DATE
+> Task :sharedutils:prepareLintJarForPublish UP-TO-DATE
+> Task :sharedutils:mergeDebugJavaResource UP-TO-DATE
+> Task :sharedutils:syncDebugLibJars UP-TO-DATE
+> Task :sharedutils:bundleDebugLocalLintAar UP-TO-DATE
+> Task :appupdatechecker2:createFullJarDebug UP-TO-DATE
+> Task :appupdatechecker2:preDebugAndroidTestBuild UP-TO-DATE
+> Task :appupdatechecker2:writeDebugLintModelMetadata UP-TO-DATE
+> Task :sharedutils:createFullJarDebug UP-TO-DATE
+> Task :sharedutils:writeDebugLintModelMetadata UP-TO-DATE
+> Task :appupdatechecker2:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :appupdatechecker2:extractProguardFiles UP-TO-DATE
+> Task :sharedutils:extractProguardFiles UP-TO-DATE
+> Task :sharedutils:generateDebugLintModel UP-TO-DATE
+> Task :appupdatechecker2:generateDebugLintModel UP-TO-DATE
+> Task :appupdatechecker2:preDebugUnitTestBuild UP-TO-DATE
+> Task :appupdatechecker2:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :sharedutils:lintAnalyzeDebug UP-TO-DATE
+> Task :appupdatechecker2:lintAnalyzeDebug UP-TO-DATE
+> Task :appupdatechecker2:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :appupdatechecker2:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :common:checkDebugAarMetadata UP-TO-DATE
+> Task :common:mergeDebugJniLibFolders UP-TO-DATE
+> Task :common:mergeDebugNativeLibs NO-SOURCE
+> Task :common:stripDebugDebugSymbols NO-SOURCE
+> Task :common:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :common:extractDebugAnnotations UP-TO-DATE
+> Task :common:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :common:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :common:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :common:prepareDebugArtProfile UP-TO-DATE
+> Task :common:prepareLintJarForPublish UP-TO-DATE
+> Task :common:mergeDebugJavaResource UP-TO-DATE
+> Task :common:syncDebugLibJars UP-TO-DATE
+> Task :common:bundleDebugLocalLintAar UP-TO-DATE
+> Task :youtubeapi:checkDebugAarMetadata UP-TO-DATE
+> Task :youtubeapi:mergeDebugJniLibFolders UP-TO-DATE
+> Task :youtubeapi:mergeDebugNativeLibs NO-SOURCE
+> Task :youtubeapi:stripDebugDebugSymbols NO-SOURCE
+> Task :youtubeapi:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :youtubeapi:extractDebugAnnotations UP-TO-DATE
+> Task :youtubeapi:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :youtubeapi:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :youtubeapi:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :youtubeapi:prepareDebugArtProfile UP-TO-DATE
+> Task :youtubeapi:prepareLintJarForPublish UP-TO-DATE
+> Task :youtubeapi:mergeDebugJavaResource UP-TO-DATE
+> Task :youtubeapi:syncDebugLibJars UP-TO-DATE
+> Task :youtubeapi:bundleDebugLocalLintAar UP-TO-DATE
+> Task :mediaserviceinterfaces:checkDebugAarMetadata UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugJniLibFolders UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugNativeLibs NO-SOURCE
+> Task :mediaserviceinterfaces:stripDebugDebugSymbols NO-SOURCE
+> Task :mediaserviceinterfaces:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :mediaserviceinterfaces:extractDebugAnnotations UP-TO-DATE
+> Task :mediaserviceinterfaces:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :mediaserviceinterfaces:prepareDebugArtProfile UP-TO-DATE
+> Task :mediaserviceinterfaces:prepareLintJarForPublish UP-TO-DATE
+> Task :mediaserviceinterfaces:mergeDebugJavaResource UP-TO-DATE
+> Task :mediaserviceinterfaces:syncDebugLibJars UP-TO-DATE
+> Task :mediaserviceinterfaces:bundleDebugLocalLintAar UP-TO-DATE
+> Task :filepicker-lib:checkDebugAarMetadata UP-TO-DATE
+> Task :filepicker-lib:mergeDebugJniLibFolders UP-TO-DATE
+> Task :filepicker-lib:mergeDebugNativeLibs NO-SOURCE
+> Task :filepicker-lib:stripDebugDebugSymbols NO-SOURCE
+> Task :filepicker-lib:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :filepicker-lib:extractDebugAnnotations UP-TO-DATE
+> Task :filepicker-lib:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :filepicker-lib:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :filepicker-lib:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :filepicker-lib:prepareDebugArtProfile UP-TO-DATE
+> Task :filepicker-lib:prepareLintJarForPublish UP-TO-DATE
+> Task :filepicker-lib:mergeDebugJavaResource UP-TO-DATE
+> Task :filepicker-lib:syncDebugLibJars UP-TO-DATE
+> Task :filepicker-lib:bundleDebugLocalLintAar UP-TO-DATE
+> Task :slidableactivity:checkDebugAarMetadata UP-TO-DATE
+> Task :slidableactivity:mergeDebugJniLibFolders UP-TO-DATE
+> Task :slidableactivity:mergeDebugNativeLibs NO-SOURCE
+> Task :slidableactivity:stripDebugDebugSymbols NO-SOURCE
+> Task :slidableactivity:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :slidableactivity:extractDebugAnnotations UP-TO-DATE
+> Task :slidableactivity:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :slidableactivity:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :slidableactivity:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :slidableactivity:prepareDebugArtProfile UP-TO-DATE
+> Task :slidableactivity:prepareLintJarForPublish UP-TO-DATE
+> Task :slidableactivity:mergeDebugJavaResource UP-TO-DATE
+> Task :slidableactivity:syncDebugLibJars UP-TO-DATE
+> Task :slidableactivity:bundleDebugLocalLintAar UP-TO-DATE
+> Task :j2v8:checkDebugAarMetadata UP-TO-DATE
+> Task :j2v8:mergeDebugJniLibFolders UP-TO-DATE
+> Task :j2v8:mergeDebugNativeLibs UP-TO-DATE
+> Task :j2v8:stripDebugDebugSymbols UP-TO-DATE
+> Task :j2v8:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :j2v8:extractDebugAnnotations UP-TO-DATE
+> Task :j2v8:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :j2v8:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :j2v8:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :j2v8:prepareDebugArtProfile UP-TO-DATE
+> Task :j2v8:prepareLintJarForPublish UP-TO-DATE
+> Task :j2v8:mergeDebugJavaResource UP-TO-DATE
+> Task :j2v8:syncDebugLibJars UP-TO-DATE
+> Task :j2v8:bundleDebugLocalLintAar UP-TO-DATE
+> Task :common:createFullJarDebug UP-TO-DATE
+> Task :common:preDebugAndroidTestBuild UP-TO-DATE
+> Task :common:writeDebugLintModelMetadata UP-TO-DATE
+> Task :filepicker-lib:createFullJarDebug UP-TO-DATE
+> Task :filepicker-lib:writeDebugLintModelMetadata UP-TO-DATE
+> Task :j2v8:createFullJarDebug UP-TO-DATE
+> Task :j2v8:writeDebugLintModelMetadata UP-TO-DATE
+> Task :mediaserviceinterfaces:createFullJarDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:writeDebugLintModelMetadata UP-TO-DATE
+> Task :slidableactivity:createFullJarDebug UP-TO-DATE
+> Task :slidableactivity:writeDebugLintModelMetadata UP-TO-DATE
+> Task :youtubeapi:createFullJarDebug UP-TO-DATE
+> Task :youtubeapi:writeDebugLintModelMetadata UP-TO-DATE
+> Task :common:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :common:extractProguardFiles UP-TO-DATE
+> Task :filepicker-lib:extractProguardFiles UP-TO-DATE
+> Task :filepicker-lib:generateDebugLintModel UP-TO-DATE
+> Task :j2v8:extractProguardFiles UP-TO-DATE
+> Task :j2v8:generateDebugLintModel UP-TO-DATE
+> Task :mediaserviceinterfaces:extractProguardFiles UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugLintModel UP-TO-DATE
+> Task :slidableactivity:extractProguardFiles UP-TO-DATE
+> Task :slidableactivity:generateDebugLintModel UP-TO-DATE
+> Task :youtubeapi:extractProguardFiles UP-TO-DATE
+> Task :youtubeapi:generateDebugLintModel UP-TO-DATE
+> Task :common:generateDebugLintModel UP-TO-DATE
+> Task :common:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :filepicker-lib:lintAnalyzeDebug UP-TO-DATE
+> Task :j2v8:lintAnalyzeDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:lintAnalyzeDebug UP-TO-DATE
+> Task :slidableactivity:lintAnalyzeDebug UP-TO-DATE
+> Task :youtubeapi:lintAnalyzeDebug UP-TO-DATE
+> Task :common:lintAnalyzeDebug UP-TO-DATE
+> Task :common:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :common:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :doubletapplayerview-media3:checkDebugAarMetadata UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugJniLibFolders UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugNativeLibs NO-SOURCE
+> Task :doubletapplayerview-media3:stripDebugDebugSymbols NO-SOURCE
+> Task :doubletapplayerview-media3:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :doubletapplayerview-media3:extractDebugAnnotations UP-TO-DATE
+> Task :doubletapplayerview-media3:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :doubletapplayerview-media3:prepareDebugArtProfile UP-TO-DATE
+> Task :doubletapplayerview-media3:prepareLintJarForPublish UP-TO-DATE
+> Task :doubletapplayerview-media3:mergeDebugJavaResource UP-TO-DATE
+> Task :doubletapplayerview-media3:syncDebugLibJars UP-TO-DATE
+> Task :doubletapplayerview-media3:bundleDebugLocalLintAar UP-TO-DATE
+> Task :doubletapplayerview-media3:createFullJarDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:preDebugAndroidTestBuild UP-TO-DATE
+> Task :doubletapplayerview-media3:writeDebugLintModelMetadata UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :doubletapplayerview-media3:extractProguardFiles UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugLintModel UP-TO-DATE
+> Task :doubletapplayerview-media3:preDebugUnitTestBuild UP-TO-DATE
+> Task :doubletapplayerview-media3:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :doubletapplayerview-media3:lintAnalyzeDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :doubletapplayerview-media3:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :filepicker-lib:preDebugAndroidTestBuild UP-TO-DATE
+> Task :filepicker-lib:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :filepicker-lib:preDebugUnitTestBuild UP-TO-DATE
+> Task :filepicker-lib:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :filepicker-lib:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :filepicker-lib:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :j2v8:preDebugAndroidTestBuild UP-TO-DATE
+> Task :j2v8:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :j2v8:preDebugUnitTestBuild UP-TO-DATE
+> Task :j2v8:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :j2v8:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :j2v8:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :mediaserviceinterfaces:preDebugAndroidTestBuild UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :mediaserviceinterfaces:preDebugUnitTestBuild UP-TO-DATE
+> Task :mediaserviceinterfaces:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :mediaserviceinterfaces:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :mediaserviceinterfaces:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :sabr-media3:checkDebugAarMetadata UP-TO-DATE
+> Task :sabr-media3:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sabr-media3:mergeDebugNativeLibs NO-SOURCE
+> Task :sabr-media3:stripDebugDebugSymbols NO-SOURCE
+> Task :sabr-media3:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :sabr-media3:extractDebugAnnotations UP-TO-DATE
+> Task :sabr-media3:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :sabr-media3:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :sabr-media3:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :sabr-media3:prepareDebugArtProfile UP-TO-DATE
+> Task :sabr-media3:prepareLintJarForPublish UP-TO-DATE
+> Task :sabr-media3:mergeDebugJavaResource UP-TO-DATE
+> Task :sabr-media3:syncDebugLibJars UP-TO-DATE
+> Task :sabr-media3:bundleDebugLocalLintAar UP-TO-DATE
+> Task :sabr-media3:createFullJarDebug UP-TO-DATE
+> Task :sabr-media3:preDebugAndroidTestBuild UP-TO-DATE
+> Task :sabr-media3:writeDebugLintModelMetadata UP-TO-DATE
+> Task :sabr-media3:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :sabr-media3:extractProguardFiles UP-TO-DATE
+> Task :sabr-media3:generateDebugLintModel UP-TO-DATE
+> Task :sabr-media3:preDebugUnitTestBuild UP-TO-DATE
+> Task :sabr-media3:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :sabr-media3:lintAnalyzeDebug UP-TO-DATE
+> Task :sabr-media3:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :sabr-media3:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :sharedutils:preDebugAndroidTestBuild UP-TO-DATE
+> Task :sharedutils:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :sharedtests:preBuild UP-TO-DATE
+> Task :sharedtests:preDebugBuild UP-TO-DATE
+> Task :sharedtests:checkDebugAarMetadata UP-TO-DATE
+> Task :sharedtests:mergeDebugJniLibFolders UP-TO-DATE
+> Task :sharedtests:mergeDebugNativeLibs NO-SOURCE
+> Task :sharedtests:stripDebugDebugSymbols NO-SOURCE
+> Task :sharedtests:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :sharedtests:generateDebugResources UP-TO-DATE
+> Task :sharedtests:packageDebugResources UP-TO-DATE
+> Task :sharedtests:processDebugNavigationResources UP-TO-DATE
+> Task :sharedtests:parseDebugLocalResources UP-TO-DATE
+> Task :sharedtests:generateDebugRFile UP-TO-DATE
+> Task :sharedtests:extractDebugAnnotations UP-TO-DATE
+> Task :sharedtests:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :sharedtests:generateDebugAssets UP-TO-DATE
+> Task :sharedtests:mergeDebugAssets UP-TO-DATE
+> Task :sharedtests:compileDebugKotlin NO-SOURCE
+> Task :sharedtests:javaPreCompileDebug UP-TO-DATE
+> Task :sharedtests:compileDebugJavaWithJavac UP-TO-DATE
+> Task :sharedtests:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :sharedtests:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :sharedtests:prepareDebugArtProfile UP-TO-DATE
+> Task :sharedtests:prepareLintJarForPublish UP-TO-DATE
+> Task :sharedtests:processDebugManifest UP-TO-DATE
+> Task :sharedtests:processDebugJavaRes NO-SOURCE
+> Task :sharedtests:mergeDebugJavaResource UP-TO-DATE
+> Task :sharedtests:syncDebugLibJars UP-TO-DATE
+> Task :sharedtests:writeDebugAarMetadata UP-TO-DATE
+> Task :sharedtests:bundleDebugLocalLintAar UP-TO-DATE
+> Task :sharedtests:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :sharedtests:createFullJarDebug UP-TO-DATE
+> Task :sharedtests:writeDebugLintModelMetadata UP-TO-DATE
+> Task :sharedutils:preDebugUnitTestBuild UP-TO-DATE
+> Task :sharedutils:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :sharedutils:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :sharedutils:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :slidableactivity:preDebugAndroidTestBuild UP-TO-DATE
+> Task :slidableactivity:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :slidableactivity:preDebugUnitTestBuild UP-TO-DATE
+> Task :slidableactivity:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :slidableactivity:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :slidableactivity:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :smarttubetv:preStmobileDebugAndroidTestBuild SKIPPED
+> Task :smarttubetv:extractProguardFiles UP-TO-DATE
+> Task :smarttubetv:generateStmobileDebugLintReportModel
+> Task :youtubeapi:preDebugAndroidTestBuild UP-TO-DATE
+> Task :youtubeapi:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :youtubeapi:preDebugUnitTestBuild UP-TO-DATE
+> Task :youtubeapi:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :youtubeapi:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :youtubeapi:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :smarttubetv:mergeStmobileDebugNativeDebugMetadata NO-SOURCE
+> Task :smarttubetv:compressStmobileDebugAssets UP-TO-DATE
+> Task :smarttubetv:generateStmobileDebugGlobalSynthetics UP-TO-DATE
+> Task :smarttubetv:processStmobileDebugResources
+> Task :smarttubetv:checkStmobileDebugDuplicateClasses UP-TO-DATE
+> Task :smarttubetv:packageStmobileDebugUnitTestForUnitTest
+> Task :smarttubetv:generateStmobileDebugUnitTestConfig
+> Task :smarttubetv:desugarStmobileDebugFileDependencies UP-TO-DATE
+> Task :smarttubetv:bundleStmobileDebugClassesToCompileJar
+> Task :smarttubetv:bundleStmobileDebugClassesToRuntimeJar
+> Task :smarttubetv:mergeExtDexStmobileDebug UP-TO-DATE
+> Task :smarttubetv:compileStmobileDebugUnitTestKotlin NO-SOURCE
+
+> Task :smarttubetv:compileStmobileDebugUnitTestJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :smarttubetv:processStmobileDebugUnitTestJavaRes NO-SOURCE
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+> Task :smarttubetv:lintAnalyzeStmobileDebug
+
+> Task :smarttubetv:testStmobileDebugUnitTest
+
+DreamDialogsTest > navigationMenuMatchesDarkBarWhileGeneralSheetsStayLavender FAILED
+    java.lang.NullPointerException at DreamDialogsTest.java:84
+
+DreamDialogsTest > navigationMenuMatchesLightBarWhileGeneralSheetsKeepTheirSurface FAILED
+    java.lang.NullPointerException at DreamDialogsTest.java:84
+
+878 tests completed, 2 failed, 1 skipped
+
+> Task :smarttubetv:testStmobileDebugUnitTest FAILED
+> Task :smarttubetv:generateStmobileDebugAndroidTestLintModel
+> Task :smarttubetv:generateStmobileDebugUnitTestLintModel
+> Task :common:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :youtubeapi:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :mediaserviceinterfaces:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :appupdatechecker2:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :sharedutils:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :doubletapplayerview-media3:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :sabr-media3:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :filepicker-lib:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :slidableactivity:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :j2v8:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :smarttubetv:lintAnalyzeStmobileDebugAndroidTest
+> Task :smarttubetv:dexBuilderStmobileDebug
+> Task :smarttubetv:mergeLibDexStmobileDebug UP-TO-DATE
+> Task :smarttubetv:mergeStmobileDebugJavaResource UP-TO-DATE
+> Task :appupdatechecker2:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :common:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :doubletapplayerview-media3:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :filepicker-lib:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :j2v8:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :mediaserviceinterfaces:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sabr-media3:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :sharedutils:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :slidableactivity:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :smarttubetv:mergeStmobileDebugJniLibFolders UP-TO-DATE
+> Task :youtubeapi:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :smarttubetv:mergeStmobileDebugNativeLibs UP-TO-DATE
+> Task :smarttubetv:stripStmobileDebugDebugSymbols UP-TO-DATE
+> Task :smarttubetv:validateSigningStmobileDebug UP-TO-DATE
+> Task :smarttubetv:writeStmobileDebugAppMetadata UP-TO-DATE
+> Task :smarttubetv:writeStmobileDebugSigningConfigVersions UP-TO-DATE
+> Task :smarttubetv:mergeProjectDexStmobileDebug
+> Task :smarttubetv:lintAnalyzeStmobileDebugUnitTest
+> Task :smarttubetv:packageStmobileDebug
+> Task :smarttubetv:createStmobileDebugApkListingFileRedirect
+
+> Task :smarttubetv:lintReportStmobileDebug
+Wrote HTML report to file:///home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/reports/lint-results-stmobileDebug.html
+
+> Task :smarttubetv:copyRenamedApksForStmobileDebug
+> Task :smarttubetv:lintStmobileDebug
+> Task :smarttubetv:assembleStmobileDebug
+
+[Incubating] Problems report is available at: file:///home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':smarttubetv:testStmobileDebugUnitTest'.
+> There were failing tests. See the report at: file:///home/geeray/Projects/DreamPipe-1.0.1.fvrwOt/DreamPipe/smarttubetv/build/reports/tests/testStmobileDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.REDACTED_GOOGLE_REFRESH_TOKEN#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 46s
+488 actionable tasks: 35 executed, 453 up-to-date

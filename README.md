@@ -1,34 +1,41 @@
+<div align="center">
+
+<img src="docs/dreampipe-icon.png" width="108" alt="DreamPipe icon">
+
 # DreamPipe
 
 **A refined Android video experience.**
 
-DreamPipe is an independent, UI-focused fork of
-[NewTube](https://github.com/aleixrodriala/newtube),
+A UI-focused fork of [NewTube](https://github.com/aleixrodriala/newtube),
 powered by [SmartTube](https://github.com/yuliskov/SmartTube).
 
-### Features
+[**Download APK**](../../releases)
 
-- Touch-friendly Android interface
-- Customized light and dark themes
-- Background playback and picture-in-picture
-- SponsorBlock and upstream playback features
+</div>
 
-### Download
+## What's different?
 
-Get the Android APK from [Releases](../../releases).
+DreamPipe builds on NewTube with subtle interface refinements:
 
-### Build
+- **Navigation** — improved menu styling and coordinated system bar colors.
+- **Theming** — customized light and dark appearances.
+- **Dialogs** — distinctive lavender surfaces and polished bottom sheets.
+- **Mobile experience** — visual consistency throughout the touch interface.
 
-Run `./gradlew :smarttubetv:assembleStmobileDebug`.
+Core playback functionality comes from NewTube and SmartTube.
 
-### Credits
+## Build
 
-- **NewTube** — aleixrodriala and contributors
-- **SmartTube** — yuliskov and contributors
+`./gradlew :smarttubetv:assembleStmobileDebug`
 
-Original copyright, licenses and third-party notices
-are preserved. This project is unofficial and independent.
+## Credits
 
-### License
+- [NewTube](https://github.com/aleixrodriala/newtube) — aleixrodriala and contributors
+- [SmartTube](https://github.com/yuliskov/SmartTube) — yuliskov and contributors
 
-See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Original copyright and license notices are preserved.
+DreamPipe is an independent, unofficial fork.
+
+## License
+
+See [LICENSE](LICENSE).
